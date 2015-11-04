@@ -1,9 +1,9 @@
 /**
  * Javascript for EJcrop extension.
  *
- * @copyright © Digitick <www.digitick.net> 2011
+ * @copyright ï¿½ Digitick <www.digitick.net> 2011
  * @license GNU Lesser General Public License v3.0
- * @author Ianaré Sévi
+ * @author Ianarï¿½ Sï¿½vi
  * @author Jacques Basseck
  * 
  */
@@ -61,6 +61,10 @@ function ejcrop_initWithButtons(id, options) {
         ajaxData[id + '_y2'] = $('#' + id + '_y2').val();
         ajaxData[id + '_h'] = $('#' + id + '_h').val();
         ajaxData[id + '_w'] = $('#' + id + '_w').val();
+
+        ajaxData[id + '_width'] = $('#' + id).outerWidth();
+        ajaxData[id + '_height'] = $('#' + id).outerHeight();
+
         for (var v in options.ajaxParams) {
             ajaxData[v] = options.ajaxParams[v];
         }
