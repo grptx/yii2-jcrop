@@ -54,6 +54,8 @@ class jCrop extends Widget {
      */
     public $ajaxParams = [];
 
+    public $ajaxComplete;
+
     /**
      * @inheritdoc
      */
@@ -105,6 +107,7 @@ class jCrop extends Widget {
         $this->jsOptions['onChange'] = new JsExpression("function(c) {ejcrop_getCoords(c,'{$this->id}'); ejcrop_showThumb(c,'{$this->id}');}");
         $this->jsOptions['ajaxUrl'] = $this->ajaxUrl;
         $this->jsOptions['ajaxParams'] = $this->ajaxParams;
+        $this->jsOptions['ajaxComplete'] = $this->ajaxComplete;
 
         $options = !empty($this->jsOptions) ? Json::encode($this->jsOptions) : '';
 
