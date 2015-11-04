@@ -10,7 +10,7 @@ use yii\web\AssetBundle;
 
 class jCropAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/newerton/yii2-jcrop/assets';
+    public $sourcePath = '@vendor/grptx/yii2-jcrop/assets';
 
     public $js = [
         'js/jquery.color.js',
