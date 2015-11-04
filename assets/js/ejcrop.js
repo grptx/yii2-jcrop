@@ -76,6 +76,10 @@ function ejcrop_initWithButtons(id, options) {
                 if (msg != 'error') {
                     // change the image source
                     $('#thumb_' + id + '> img').attr('src', msg);
+                    if(options.ajaxComplete!=undefined){
+                        var callBack = options.ajaxComplete;
+                        callBack(msg);
+                    }
                     ejcrop_reinitThumb(id);
                 }
             }
