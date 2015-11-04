@@ -8,7 +8,7 @@
  * @version 1.0.0
  */
 
-namespace newerton\jcrop;
+namespace grptx\jcrop;
 
 use yii\base\Widget;
 use yii\helpers\Html;

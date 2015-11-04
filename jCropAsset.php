@@ -4,7 +4,7 @@
  * @link http://newerton.com.br
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace newerton\jcrop;
+namespace grptx\jcrop;
 
 use yii\web\AssetBundle;
 
